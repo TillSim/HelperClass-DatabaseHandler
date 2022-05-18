@@ -46,13 +46,12 @@ public class DatabaseHandler {
         Statement stmt = null;
         try {
             stmt = connection.createStatement();
-            ConsoleLogger.printLog("Statement created");
+            ConsoleLogger.printLog("Statement created:\t" + modifySTMT);
             try {
                 stmt.execute(modifySTMT);
                 ConsoleLogger.printLog("Statement executed");
                 try {
                     stmt.close();
-                    ConsoleLogger.printLog("Statement closed");
                 } catch (SQLException e) {ConsoleLogger.printLog("Statement could not be closed");}
             } catch (SQLException e) {ConsoleLogger.printLog("Statement execution failed");}
         } catch (SQLException e) {ConsoleLogger.printLog("Statement creation failed");}
