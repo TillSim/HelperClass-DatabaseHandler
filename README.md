@@ -1,5 +1,5 @@
 # DatabaseHandler
-**DatabaseHandler** is a universal *helper* class or connecting, modifying and querying databases.
+**DatabaseHandler** is a universal *helper* class for connecting, modifying and querying databases.
 
 ---
 
